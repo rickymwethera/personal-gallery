@@ -9,3 +9,11 @@ class Image(models.Model):
     location = models.ForeignKey('Location', on_delete=models.SET_NULL, null=True)
     author = models.CharField(max_length=40, default='admin')
     date = models.DateTimeField(auto_now_add=True)
+
+class Category(models.Model):
+    name = models.CharField(max_length=15,) 
+
+
+
+class Location(models.Model):
+    name = models.CharField(max_length=20,) 
