@@ -7,18 +7,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Gallery</title>
+  <title>Gallery App</title>
 
   {% block styles %}
-  <!-- Font Awesome -->
+  <!-- Font -->
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'css/basemygallery.css' %}">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="{% static 'css/css/index.css' %}">
+  
 
   {% endblock %}
 
@@ -27,8 +27,8 @@
 <body>
 
   <nav class="navbar navbar-expand-lg bg-dark fixed-top">
-    <a class="navbar-brand" href="#" style="font-size: 30px;font-family: 'Luckiest Guy', cursive;color: white;">The
-      Gallary</a>
+    <a class="navbar-brand" href="#" style="font-size: 30px;font-family: 'Poppins', cursive;color: white;">The
+      Gallery</a>
 
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -39,16 +39,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
 
-        <li class="nav-item" style="font-size: 30px; color: white;">
-          <a href="#" class="nav-link text-black">Home</a>
+        <li class="nav-item" style="font-size: 20px; color: white;">
+          <a href="#" class="nav-link text-black">Main Page</a>
         </li>
 
       </ul>
 
       <form class="form-inline my-2 my-lg-0" role="search" action="/search">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search-category" name="image"
+        <input class="form-control mr-sm-5" type="search" placeholder="Search category" name="image"
           aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <button class="btn btn-success my-2 my-sm-2" type="submit">Search Now</button>
       </form>
 
     </div>
@@ -71,7 +71,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-  <link rel="stylesheet" href="{% static 'js/scripts.js' %}">
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
 
 </body>
 
