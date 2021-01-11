@@ -1,16 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- navbar for future block content divide -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="{% url 'welcome' %}">The Photo App</a>
+<style>
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: green;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    .logo{
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 30px;
+        
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    }
+    .nav-links li{
+        list-style: none;
+    }
+    .nav-links a{
+        color: rgb(226, 226, 226);
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .intro{
+        text-align: center;
+    }
+</style>
+<nav class="navbar">
+    <div class="logo">
+        <h4>TimberLinks Limited</h4>
+
     </div>
+    <ul class="nav-links">
+        <li>
+            <a href="{% url 'home' %}">Home</a>
+        </li>
+        <li>
+            <a href="#">About Us</a>
+        </li>
+        <li>
+            <a href="#">Our Team</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+
+    <!-- searchform -->
+    <div class="col-sm-4 col-md-4 navbar-right">
+    
+
+        <form class="navbar-form" role="search" action="{% url 'search_results' %}">
+
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search by category" name="image">
+            <div class="input-group-btn">
+              <button class="btn data" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+          </div>
+
+        </form>
+      </div>
   </div>
 </nav>
 </body>
